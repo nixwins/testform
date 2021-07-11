@@ -1,0 +1,128 @@
+
+html{
+    box-sizing: border-box;
+}
+
+body, p{
+    margin:0;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    margin:0 auto;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gilroy';
+    overflow: hidden;
+    
+}
+
+
+form{
+    width:100%;
+    max-width: 440px;
+    max-height: 535px;
+    background-color: #fff;
+    box-shadow: 10px 10px 60px 0px #E2E7FF;
+    border-radius: 0px 50px 50px 50px;
+    
+    >div{
+        padding:35px;
+
+    }
+
+    label{
+        font-weight: 500;
+    }
+
+    input, input:focus{
+        outline:none;
+        border:none;
+        border-bottom: 1.5px solid #E1E3EE;
+        &::placeholder{
+            font-size:16px;
+            color:#D0D3E2;
+        }
+    }
+}
+.form-header, .form-row label{
+    margin-bottom: 12px;
+}
+.email-box{
+    margin-bottom: 32px;
+}
+.title, .btn, .add-more{
+    font-size: 18px;
+    font-weight: 700;
+}
+.title{
+    margin-bottom: 12px;
+}
+.details{
+    font-size:16px;
+    color:#1C154E;
+}
+.form-row{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:22px;
+}
+.add-more{
+    color:#23C967;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 12px;
+    span{
+        margin-left:5.37px;
+    }
+    svg{
+        width:13px;
+        height: 14px;
+    }
+}
+.form-footer{
+    p{
+        font-size:14px;
+        color:#AFB4CC;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+       
+        svg{
+            width:11px;
+            height: 13.2px;
+            margin-right: 3px;
+        }
+    }
+}
+.btn{
+    height: 45px;
+    width:100%;
+    max-width:370px;
+    color:#fff;
+    background-color: #23C967;
+    border:none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 11px;
+}
+
+.invisible{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0s, opacity 0.4s linear;
+    padding:0;
+}
+
+.active{
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+

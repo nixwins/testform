@@ -1,0 +1,42 @@
+.payment-success{
+    // margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 66px;
+   .form-header{
+       margin-bottom:34px;
+   }
+   .form-body{
+       margin-bottom: 95.5px;
+   }
+    img{
+        width: 157px;
+        height: 122px;
+        object-fit: cover;
+    }
+    .form-footer{
+        width:100%;
+    }
+  
+    
+}
+.invisible.payment-success{
+    height: 0;
+    padding: 0;
+}
+
+.payment-failed{
+    padding-bottom: 64px;
+    img{
+        width:310px;
+        min-height: 246px;
+    }
+    .btn{
+        background-color: #EA717F;
+   
+    }
+    .form-row{
+        align-items: center;
+    }
+}
